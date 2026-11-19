@@ -568,11 +568,11 @@
       if (e.key === 'Enter') { e.preventDefault(); toggleArm(); }
       else if (e.key.toLowerCase() === 'w') { e.preventDefault(); cycleWeapon(); }
       else if (e.code === 'Space') { e.preventDefault(); if (!e.repeat) fireMissile(); }
-      else if (e.key.toLowerCase() === 'g') { e.preventDefault(); if (!e.repeat) startGun(); }
+      else if (e.key.toLowerCase() === 'd') { e.preventDefault(); if (!e.repeat) startGun(); }
       else if (e.key === 'Shift') { e.preventDefault(); if (!e.repeat) countermeasure(); }
     });
     document.addEventListener('keyup', e => {
-      if (e.key.toLowerCase() === 'g') stopGun();
+      if (e.key.toLowerCase() === 'd') stopGun();
     });
     window.addEventListener('blur', stopGun);
 
