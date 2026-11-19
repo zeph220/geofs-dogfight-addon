@@ -265,7 +265,11 @@
         case 'events':
           (m.items || []).forEach(handleServerMessage); break;
         case 'invite':
-          showInvite(m); break;
+          $('df-body').hidden = false;
+          $('df-invite-box').hidden = false;
+          showInvite(m);
+          notify(`INVITATION REÇUE DE ${m.callsign || 'PILOTE'}`, '#ffe2a0');
+          break;
         case 'inviteSent': notify(`Invitation envoyée à ${m.callsign}.`); break;
         case 'inviteDeclined': notify(`${m.callsign} a refusé l'invitation.`, '#ffcc66'); break;
         case 'duelStart':
