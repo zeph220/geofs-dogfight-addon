@@ -1,0 +1,10 @@
+{
+  "name": "geofs-dogfight-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@upstash/redis": "^1.41.0",
+    "ws": "^8.23.0"
+  }
+}
