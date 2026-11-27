@@ -14,7 +14,7 @@
   'use strict';
 
   // À REMPLACER après le déploiement Vercel.
-  const WS_URL = 'wss://VOTRE-PROJET.vercel.app/api/ws';
+  const WS_URL = 'wss://geofs-dogfight-addon.vercel.app/api/ws';
   const STORES_URL = 'https://raw.githubusercontent.com/OC135/GeoFs-weapon-addon/refs/heads/main/weapons-vehicles.js';
   const LAUNCH_SOUND = 'https://raw.githubusercontent.com/mxwl-mesh-glb/missile-launch/main/freesound_community-missile-firing-fl-106655.mp3';
   const PING_MS = 300;
